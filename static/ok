@@ -1,0 +1,21 @@
+
+.nobg{
+  width:36px;
+
+  
+  background-color:#fff !important;
+
+}
+.nobgform{
+  background-color:#fff !important;
+  box-shadow: 0 !important
+
+
+}
+
+ input.nobg {
+    background-image: url(/static/img/vintage.png);
+   border-radius: 50%;
+    background-repeat: no-repeat;
+    text-indent: 30px;
+}

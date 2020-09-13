@@ -1,4 +1,4 @@
-# Ecommerce WebSite With Django2
+# Covaid WebSite With Django
 
 # Features
 	1. Full Authentication
@@ -10,6 +10,7 @@
 	7. Wishlish Delete
 	8. Profile Crete
 	9. Profile Update
+	10. Covid helping related features
 
 # Future Plan
 	1.Online Payment Add
@@ -24,9 +25,6 @@ $ pipenv shell
 
 # Install dependencies
 $ pipenv install
-
-# For Static Folder
-$ python manage.py collectstatic
 
 ```
 *currently you need to go to admin and add your image*

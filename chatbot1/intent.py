@@ -64,6 +64,7 @@ class AddItemsIntent(Intent):
             return s
 
         # add all intent entities
+        end=""
         for entity in data['entities']:
             b=self.commands[0].do(self.chatbot, entity['value'])
             if (b==1):

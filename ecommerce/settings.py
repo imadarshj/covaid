@@ -156,10 +156,10 @@ EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "groc4all@gmail.com"
-EMAIL_HOST_PASSWORD = "troubleshooters"
+EMAIL_HOST_USER = "geniusadarsh4@gmail.com"
+EMAIL_HOST_PASSWORD = "adarshindia"
 
-SENDER_EMAIL = "groc4all@gmail.com"
+SENDER_EMAIL = "geniusadarsh4@gmail.com"
 
 STRIPE_SECRET_KEY = 'sk_test_taIXxge0gFAph97YgS4hugoz00mm5q8OKv'
 STRIPE_PUBLISHABLE_KEY = 'pk_test_3CEtRqmlnYvIOtQmsEslfEO500DRlJ7IyR'

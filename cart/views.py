@@ -179,7 +179,7 @@ def confrm_checkout(request):
 				send_mail("Order INVOICE", content, settings.SENDER_EMAIL, [request.user.email], fail_silently=False)
 				content='Hi '+product_object.user.username+'\n\nCurrently an order with order id: '+str(order.id)+' has been successfully placed at your account.\
 				Kindly, check the order and respond favourably to the customer.\n'
-				send_mail("Order Alert!!", content, settings.SENDER_EMAIL, [product_object.user.email], fail_silently=False)
+				send_mail("Order Alert!!", content, settings.SENDER_EMAIL, [product_object.user.email], fail_silently=True)
 				# cart = Cart(request)
 				# cart.clear()
 				context ={

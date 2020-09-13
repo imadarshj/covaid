@@ -1,0 +1,82 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} | About Us {% endblock %}
+
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About BDSG</h1>
+          <p class="lead">Learn more about BDSG and it's role in blood donation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Who can you donate to or receive blood from?</h2>
+          <p class="lead"> This question has proven challenging to many people. The image below provides you with a quick summary of which blood groups you can donate 
+            to and which ones you can receive blood from.
+          </p>
+          <img src="{% static 'img/blood_groups.png' %}" alt="">
+        </div>
+        <div class="col-md-12">
+            <h2>What is the role of BDSG?</h2>
+            <p class="lead"> BDSG is a platform that allows would be donors to get all information they need in matters pertaining to blood donation.
+            </p>
+            <p class="mt-4">
+              This platform provides all the information you need as a donor to be empowered to donate blood conveniently.
+              BDSG leverages powerful technologies such as geolocation, SMS and our network of partner donation centers to allow you book and appointment and make a blood donation.
+            </p>
+          </div>
+          <div class="col-md-12">
+              <h2>Number of people in need of blood currently</h2>
+              <p class="lead"> BDSG is a platform that allows would be donors to get all information they need in matters pertaining to blood donation.
+              </p>
+              {% include "listings/dashboard.html" with objects=dashboard_details %}
+              <p class="mt-4">BDSG uses it's network of donation centers to highlights blood donation needs to blood donors.</p>
+            </div>
+            <div class="col-md-12">
+                <h2>Partners</h2>
+                <p class="lead"> BDSG has partnered with other organisations to ensure all donors are furnished with the most updated information when it comes to blood donation
+                </p>
+                <div style="display: flex;overflow-x:auto;">
+                    <a href="https://www.redcross.or.ke/" target="_blank"> <img src="{% static 'img/krcs.svg' %}" alt="" class="col-md-6" style="flex: 33.33%;padding: 5px;" width="500" height="500"></a>
+                    <a href="https://nbtskenya.or.ke/" target="_blank"> <img src="{% static 'img/knbts.png' %}" alt="" class="col-md-6" width="300" height="300"></a>
+                </div>
+                <p class="mt-4">BDSG uses it's network of donation centers to highlights blood donation needs to blood donors.</p>
+              </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-light text-black text-center">
+    <h2 class="display-4">Find a Donation Centre near you</h2>
+    <h4>Be a blood donor today and help save a life</h4>
+    <hr>
+    <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Donation Requests</a>
+  </section>
+
+{% endblock %}

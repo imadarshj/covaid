@@ -2,6 +2,72 @@
 {% load static %}
 
 {% block content %}
+
+    <style>
+        #container{
+width: 100%;
+  max-width: 960px;
+  border: 2px solid red;
+  margin: 20px auto;
+  
+}
+.team{
+  text-align: center;
+  text-decoration:underline;
+  font-size: 30px;
+}
+
+.box {
+  display: inline-block;
+  padding: 10px 60px;
+  
+}
+
+.box img {
+  padding: 0 2px;
+}
+@media only screen and (max-width: 950px) {
+  #container {
+    margin: 10px 20px;
+    width:95%;
+  } 
+  .box {
+ 
+  padding: 10px 20px;
+  
+}
+  
+}
+@media only screen and (max-width: 850px) {
+  #container {
+    margin: 10px 90px;
+    width:58%;
+  } 
+  .box {
+    padding: 10px 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #container {
+    margin: 10px 50px;
+    width:70%;
+  } 
+  .box {
+    padding: 10px 50px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  #container {
+    margin: 10px 90px;
+    width:75%;
+  } 
+  .box {
+    padding: 10px 50px;
+  }
+}
+    </style>
+
+
     <div class="hero-wrap hero-bread" style="background-image: url({% static 'images/bg_1.jpg' %});">
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -24,18 +90,20 @@
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section-bold mb-4 mt-md-5">
 	          	<div class="ml-md-0">
-		            <h2 class="mb-4">Welcome to Groc4All an eCommerce website</h2>
+		            <h2 class="mb-4">Welcome to CovAid</h2>
 	            </div>
 	          </div>
 	          <div class="pb-md-5">
-	          	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-							<p><a href="#" class="btn btn-primary">Shop now</a></p>
+	          	<p>A complete app to combat COVID 19 and support the people affected, through logistics, healthcare, advice and mental support. </p>
+							
+							<p><a href="#" class="btn btn-primary">Know More</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+        </section>
+        
+
 
 		<!-- <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
       <div class="container py-4">
@@ -56,6 +124,12 @@
       </div>
     </section> -->
 
+
+
+
+
+
+
 		<section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url({% static 'images/bg_3.jpg' %});">
     	<div class="container">
     		<div class="row justify-content-center py-5">
@@ -65,7 +139,7 @@
 		            <div class="block-18 text-center">
 		              <div class="text">
 		                <strong class="number" data-number="10000">0</strong>
-		                <span>Happy Customers</span>
+		                <span>Users</span>
 		              </div>
 		            </div>
 		          </div>
@@ -99,94 +173,23 @@
     	</div>
     </section>
 
-		<section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-          	<span class="subheading">Testimony</span>
-            <h2 class="mb-4">Our satisfied customer says</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+
+    
+    <section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
+        <div id="container">
+            <h1 class="team">Our Team </h1>
+          <div class="box">
+            
+                <img src="https://cdn.tutsplus.com/net/uploads/legacy/958_placeholders/placehold.gif">
+            <img src="https://cdn.tutsplus.com/net/uploads/legacy/958_placeholders/placehold.gif">
+            <img src="https://cdn.tutsplus.com/net/uploads/legacy/958_placeholders/placehold.gif">
+            <img src="https://cdn.tutsplus.com/net/uploads/legacy/958_placeholders/placehold.gif">
           </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_2.jpg' %})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Interface Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_3.jpg' %})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">UI Designer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Web Developer</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-5" style="background-image: url({% static 'images/person_1.jpg' %})">
-                    <span class="quote d-flex align-items-center justify-content-center">
-                      <i class="icon-quote-left"></i>
-                    </span>
-                  </div>
-                  <div class="text text-center">
-                    <p class="mb-5 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">System Analyst</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </div>
+            
     </section>
 
+    <h2>Features:</h2>
     <section class="ftco-section bg-light">
 			<div class="container">
 				<div class="row no-gutters ftco-services">
@@ -207,8 +210,8 @@
             		<span class="flaticon-diet"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Always Fresh</h3>
-                <span>Product well package</span>
+                <h3 class="heading">Doctor Support</h3>
+                <span>Expert consultation</span>
               </div>
             </div>
           </div>
@@ -218,8 +221,8 @@
             		<span class="flaticon-award"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Superior Quality</h3>
-                <span>Quality Products</span>
+                <h3 class="heading">AI Analysis</h3>
+                <span>X-ray/ct chest images</span>
               </div>
             </div>
           </div>
